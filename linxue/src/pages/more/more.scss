@@ -1,0 +1,88 @@
+.user {
+  display:flex;
+  width: 725px;
+  height: 325px;
+  background: #e0f3c1;
+  padding: 30px 25px 30px 0;
+  margin: 15rpx 0 0 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #dcdcdc;
+  box-shadow: 0 2px 5px #eeeeee;
+  align-items: center;
+
+  .userinfo-avatar{
+    margin-left: 150px;
+    flex: 1;
+    display: inline-block;
+    width: 250px!important;
+    height: 250px!important;
+  }
+  .username{
+      flex-grow: 2;
+      .user_tips{
+        font-size: 30px;
+        color: #818A8F;
+        margin-left: 50px;
+      }
+  }
+  text,div,span{
+      display: block;
+    }
+}
+.my{
+  margin: 15px 0 0 0;
+  border-top: solid 1px #ebebeb;
+  border-bottom: solid 2px #ebebeb;
+
+  .my_item{
+    display: flex;
+    width: 750px;
+    background: #ffffff;
+    padding: 0;
+
+    .my_img{
+      flex: 1;
+      vertical-align: middle;
+      .my_image{
+        width: 40px;
+        height: 40px;
+        margin-left: 16px;
+        margin-right: 16px;
+      }
+    }
+    .my_content{
+      flex: 5;
+      text-align: left;
+      font-size: 34px;
+      color: #6d6d6d;
+      line-height: 60px;
+      padding: 30px 0;
+      border-bottom: solid 1px #ebebeb;
+    }
+
+    &:last-child .my_content{
+      border-bottom: none;
+    }
+  }
+}
+.top-tab{
+  display: flex;
+  width: 750px;
+  height: 100px;
+  background: rgb(240, 186, 9);
+  color: rgb(223, 248, 184);
+  font-size: 28px;
+  line-height: 100px;
+  box-shadow: 0 2px 2px #bebebe;
+  margin: 0 0 8px 0;
+  z-index: 9999;
+  justify-content: center;
+  .active {
+    color: #0b8600;
+    border-bottom: solid 2px #ffffff;
+  }
+}
+
+.article_list{
+  height: 550px;
+}
